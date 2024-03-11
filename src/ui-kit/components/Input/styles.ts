@@ -12,16 +12,16 @@ export const useStyles = createUseStyles((theme: UIKitElementTheme) => ({
     boxShadow: "0px 1px 2px rgba(16, 24, 40, 0.05)",
     padding: "10px 14px",
     "&:hover": {
-      background: theme.input.hoverColor,
-    },
+      background: theme.input.hoverColor
+    }
   },
 
   readonly: {
     pointerEvents: "none",
-    opacity: 0.7,
+    opacity: 0.7
   },
 
   wrapper: {
-    marginTop: 20,
+    marginTop: 20
   },
 }));

@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 export const PrimaryInput: Story = {
   args: {
     type: "text",
-    value: "TestValue",
+    value: "TestValue"
   },
 };
 
@@ -24,7 +24,7 @@ export const InputReadOnly: Story = {
   args: {
     type: "text",
     value: "TestValue",
-    readonly: true,
+    readonly: true
   },
 };
 

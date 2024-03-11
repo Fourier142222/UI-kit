@@ -17,44 +17,44 @@ export const useStyles = createUseStyles((theme: UIKitElementTheme) => ({
     boxShadow: " 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%)",
     transition: "all .3s ease",
     "&:hover": {
-      background: theme.button.hoverColor,
+      background: theme.button.hoverColor
     },
   },
 
   size_m: {
     height: 32,
     fontSize: fontSizes.medium.fontSize,
-    lineHeight: fontSizes.medium.lineHeight,
+    lineHeight: fontSizes.medium.lineHeight
   },
 
   size_l: {
     height: 40,
     fontSize: fontSizes.large.fontSize,
-    lineHeight: fontSizes.large.lineHeight,
+    lineHeight: fontSizes.large.lineHeight
   },
 
   size_xl: {
     height: 48,
     fontSize: fontSizes.extraLarge.fontSize,
-    lineHeight: fontSizes.extraLarge.lineHeight,
+    lineHeight: fontSizes.extraLarge.lineHeight
   },
 
   disabled: {
     opacity: 0.6,
-    pointerEvents: "none",
+    pointerEvents: "none"
   },
 
   clear: {
     border: "none",
-    outline: "none",
+    outline: "none"
   },
 
   outline: {
-    border: `2px solid ${theme.button.borderColor}`,
+    border: `2px solid ${theme.button.borderColor}`
   },
 
   background: {
     border: "none",
-    backgroundColor: theme.button.bgColor,
-  },
+    backgroundColor: theme.button.bgColor
+  }
 }));

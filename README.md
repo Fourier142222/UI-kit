@@ -19,7 +19,7 @@
 Компоненты также доступны в StoryBook
 
 # Scripts
-    npm run start - запуск приложение
-    npm run test - запуск юнит тество
-    npm run storybook - запуск storyBook
+    npm run start - запуск приложения
+    npm run test - запуск юнит тестов
+    npm run storybook - запуск storybook
 

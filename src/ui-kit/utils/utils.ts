@@ -1,19 +1,18 @@
-export type Mods = Record<string, boolean | string | undefined>
+export type Mods = Record<string, boolean | string | undefined>;
 
 export function classNames(
-    cls: string,
-    mods: Mods = {},
-    additional: Array<string | undefined> = [],
+  cls: string,
+  mods: Mods = {},
+  additional: Array<string | undefined> = [],
 ): string {
-    return [
-        cls,
-        ...additional.filter(Boolean),
-        ...Object.entries(mods)
-            .filter(([_, value]) => Boolean(value))
-            .map(([className]) => className),
-    ]
-        .join(' ');
+  return [
+    cls,
+    ...additional.filter(Boolean),
+    ...Object.entries(mods)
+      .filter(([_, value]) => Boolean(value))
+      .map(([className]) => className),
+  ].join(" ");
 }
 
-export const getClassListArrFromString = (classes: string) => 
-    classes.split(' ').map(cls => cls.split('-')[0])
+export const getClassListArrFromString = (classes: string) =>
+  classes.split(" ").map((cls) => cls.split("-")[0]);

@@ -14,6 +14,7 @@ interface InputProps extends HTMLInputProps {
     placeholder?: string
     disabled?: boolean
     readonly?: boolean
+    testId?: string
     className?: string
     onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
@@ -28,6 +29,7 @@ export const Input = memo((props: InputProps) => {
         readonly,
         wrapperClassName,
         className,
+        testId,
         onChange,
         ...otherProps
     } = props;
@@ -47,6 +49,7 @@ export const Input = memo((props: InputProps) => {
                 placeholder={placeholder}
                 onChange={onChange}
                 readOnly={readonly}
+                data-testid={testId}   
                 {...otherProps}
             />
       </div>

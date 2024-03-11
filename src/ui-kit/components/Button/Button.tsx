@@ -46,6 +46,8 @@ export const Button = memo((props: ButtonProps) => {
         <button 
             data-testid={testId}   
             className={classNames(cls.button, mods, [className, cls[size], cls[view]])} 
+            disabled={disabled}
+            type={type}
             {...otherProps}
         >
             {children}

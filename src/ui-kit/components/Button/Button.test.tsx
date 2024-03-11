@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from "@testing-library/react";
 import { Button, ButtonView, ButtonSize } from './Button';
 import { getClassListArrFromString } from '../../utils/utils';
+import '@testing-library/jest-dom'
 
 describe('Button', () => {
     it('should contain base class', () => {
